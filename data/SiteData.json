@@ -13,9 +13,9 @@
   "phone2": "098-765-4321",
   "address": "Latkata Road, Khanapara, Guwahati, Assam, India",
   "timings": {
-    "0": "Midweek : Tuesday 7 Pm (Online/ Home Visit)",
-    "1": "Vespers : Fridays 7:00 PM",
-    "2": "Sabbath : Saturdays 9:30 AM - 1:00 PM"
+    "0": "Midweek : Tue 7  (Online/Home Visit)",
+    "1": "Vespers : Fri 7:00 PM",
+    "2": "Sabbath : Sat 9:30 AM - 1:00 PM"
   },
   "coordinates": {
     "latitude": 39.781721,
