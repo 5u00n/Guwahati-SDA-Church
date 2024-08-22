@@ -1,10 +1,18 @@
 window.onload = function () {
     console.log('Global JS loaded');
-    // Get the base URL of the current location
-    const baseUrl = window.location.origin + window.location.pathname.replace(/\/$/, '');
+
+
+    // Determine if the current URL is a GitHub Pages URL
+    const isGitHubPages = window.location.hostname.includes('github.io');
+
+    // Construct the base URL
+    const baseUrl = isGitHubPages
+        ? window.location.origin + window.location.pathname.replace(/\/$/, '')
+        : window.location.origin;
 
     // Construct the full URL for the fetch request
     const dataUrl = `${baseUrl}/data/SiteData.json`;
+
 
 
     fetch(dataUrl)
