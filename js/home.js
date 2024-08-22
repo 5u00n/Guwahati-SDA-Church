@@ -127,7 +127,14 @@
 })();
 
 (function () {
-    fetch('./../data/SiteData.json')
+    // Get the base URL of the current location
+    const baseUrl = window.location.origin + window.location.pathname.replace(/\/$/, '');
+
+    // Construct the full URL for the fetch request
+    const dataUrl = `${baseUrl}/data/SiteData.json`;
+
+
+    fetch(dataUrl)
         .then(response => response.json())
         .then(data => {
             document.getElementById("chapterName1").innerHTML = data.home.hero.chapterName1;
@@ -149,13 +156,13 @@
             var aboutCard = "";
             Object.values(data.home.aboutUs).map(element => {
                 aboutCard += "<div class='col-md-4 col-sm-4 featured-block'>"
-                aboutCard += "<h3 >"+element.title+"</h3>";
+                aboutCard += "<h3 >" + element.title + "</h3>";
                 aboutCard += "<figure>";
-                aboutCard += "<a href='"+element.link+"'>"
-                aboutCard += "<img src='"+element.image+"' alt='Our Community' /></a>";
+                aboutCard += "<a href='" + element.link + "'>"
+                aboutCard += "<img src='" + element.image + "' alt='Our Community' /></a>";
                 aboutCard += "</figure>";
-                aboutCard += "<p>"+element.description+"</p>";
-                aboutCard += "<a href='"+element.buttonLink+"' class='btn btn-success'>"+element.buttonText+"</a>";
+                aboutCard += "<p>" + element.description + "</p>";
+                aboutCard += "<a href='" + element.buttonLink + "' class='btn btn-success'>" + element.buttonText + "</a>";
                 aboutCard += "</div>";
             }
             );
