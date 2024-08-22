@@ -1,6 +1,13 @@
 window.onload = function () {
     console.log('Global JS loaded');
-    fetch('/data/SiteData.json')
+    // Get the base URL of the current location
+    const baseUrl = window.location.origin + window.location.pathname.replace(/\/$/, '');
+
+    // Construct the full URL for the fetch request
+    const dataUrl = `${baseUrl}/data/SiteData.json`;
+
+
+    fetch(dataUrl)
         .then(response => response.json())
         .then(data => {
             document.getElementById('address').innerHTML = data.address;
