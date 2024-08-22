@@ -1,6 +1,6 @@
 window.onload = function () {
     console.log('Global JS loaded');
-    fetch('./../data/SiteData.json')
+    fetch('/data/SiteData.json')
         .then(response => response.json())
         .then(data => {
             document.getElementById('address').innerHTML = data.address;
