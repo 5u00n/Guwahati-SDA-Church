@@ -163,7 +163,7 @@
                 aboutCard += "<h3 >" + element.title + "</h3>";
                 aboutCard += "<figure>";
                 aboutCard += "<a href='" + element.link + "'>"
-                aboutCard += "<img src='" + element.image + "' alt='Our Community' /></a>";
+                aboutCard += "<img src='" + element.image + "' alt=" + element.title + " width='800' height='500' /></a>";
                 aboutCard += "</figure>";
                 aboutCard += "<p>" + element.description + "</p>";
                 aboutCard += "<a href='" + element.buttonLink + "' class='btn btn-success'>" + element.buttonText + "</a>";

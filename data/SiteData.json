@@ -52,7 +52,7 @@
         "description": "We are a community of faith and love.",
         "buttonText": "Learn More",
         "buttonLink": "/about.html",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMeWpJUVxcYEW4NwoxynOTWNkHf-8T1biDaQ&s"
+        "image": "/assets/img/community.jpg"
       },
       "ourMission": {
         "title": "Our Mission",
@@ -60,7 +60,7 @@
         "description": " Our mission is to share the love of our Father.",
         "buttonText": "Learn More",
         "buttonLink": "/about.html",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdXE6_liLrXc5M4_5DDdp6gIwLLVBSn3JCmA&s"
+        "image": "/assets/img/aboutus1.jpg"
       },
       "joinUs": {
         "title": "Join our Group",
@@ -68,7 +68,7 @@
         "description": "Join us and make a difference",
         "buttonText": "Join WhatsApp Group",
         "buttonLink": "https://chat.whatsapp.com/invite/1234567890",
-        "image": "https://img.freepik.com/free-vector/flat-design-join-us-message_23-2148954904.jpg"
+        "image": "/assets/img/joinus.jpg"
       }
     }
   },
