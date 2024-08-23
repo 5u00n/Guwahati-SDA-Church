@@ -1,20 +1,20 @@
 <div class="container for-navi">
-    <div class="site-logo">
-      <h1>
-        <a href="index.html">
-          <span class="logo-icon"><i class="fa fa-heart"></i></span>
-          <span class="logo-text">Guwahati SDA<span> Church</span></span>
-          <span class="logo-tagline"></span>
-        </a>
-      </h1>
-    </div>
-    <!-- Main Navigation -->
-    <nav class="main-navigation" role="navigation">
-      <ul class="sf-menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="about.html">About us</a></li>
+  <div class="site-logo">
+    <h1>
+      <a href="index.html">
+        <span class="logo-icon"><img src="/assets/img/logo.png"/></span>
+        <span class="logo-text">Guwahati SDA<span> Church</span></span>
+        <span class="logo-tagline"></span>
+      </a>
+    </h1>
+  </div>
+  <!-- Main Navigation -->
+  <nav class="main-navigation" role="navigation">
+    <ul class="sf-menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="about.html">About us</a></li>
 
-        <!--<li class="d-none">
+      <!--<li class="d-none">
           <a href="javascript:void(0)">Events</a>
           <ul class="dropdown">
             <li><a href="events.html">Events List</a></li>
@@ -31,9 +31,22 @@
             <li><a href="blog-post.html">Single Post</a></li>
           </ul>
         </li>-->
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
-  </div>
-  
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+</div>
+
+
+<!-- Your custom script -->
+<script>
+  $(document).ready(function () {
+    $("#menu-toggle").click(function () {
+      console.log("Menu Toggled");
+      $(this).toggleClass("opened");
+      $(".main-navigation").slideToggle();
+      console.log("Menu Toggled");
+      return false;
+    });
+  });
+</script>

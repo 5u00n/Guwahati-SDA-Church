@@ -10,7 +10,7 @@
         </p>
       </div>
       <div class="col-md-4 widget footer_widget twitter_widget">
-        <h4>Twitter feeds</h4>
+        <h4>Facebook Feeds</h4>
         <hr class="sm" />
         <ul class="twitter-widget"></ul>
       </div>
@@ -48,12 +48,6 @@
             <li class="facebook">
               <a href="http://www.facebook.com/"><i class="fa fa-facebook"></i></a>
             </li>
-            <li class="vimeo">
-              <a href="http://www.vimeo.com/"><i class="fa fa-vimeo-square"></i></a>
-            </li>
-            <li class="twitter">
-              <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-            </li>
             <li class="googleplus">
               <a href="http://plus.google.com/"><i class="fa fa-google-plus"></i></a>
             </li>
@@ -63,13 +57,12 @@
     </div>
     <div class="site-footer-bottom">
       <div class="row">
-        <div class="col-md-6 col-sm-6 copyrights-coll">&copy; 2014 Guwahati SDA Church. All Rights Reserved</div>
+        <div class="col-md-6 col-sm-6 copyrights-coll">&copy; <span id="registerDate"></span> SDA Church. All Rights Reserved</div>
         <div class="col-md-6 col-sm-6 copyrights-colr">
           <nav class="footer-nav" role="navigation">
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="donate.html">Donate now</a></li>
-              <li><a href="new-here.html">New here?</a></li>
+              <li><a href="about.html">New here?</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
@@ -78,4 +71,10 @@
     </div>
   </div>
 </div>
-
+<script>
+  $(document).ready(function () {
+    var d = new Date();
+    var n = d.getFullYear();
+    $("#registerDate").text(n);
+  });
+</script>
