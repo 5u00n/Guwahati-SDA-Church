@@ -98,8 +98,8 @@
     "image": "https://www.myportfolio.com/images/contact.jpg"
   },
   "event": {
-    "title": "Upcoming Events",
-    "description": "Join us at our upcoming events",
+    "title": "Events",
+    "description": "Join us at our events",
     "events": {
       "eventID1": {
         "id": "eventID1",

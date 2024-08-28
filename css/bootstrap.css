@@ -5581,3 +5581,44 @@ button.close {
     display: none !important;
   }
 }
+
+.card{
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, .0005);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+
+}
+
+.card .card-img-top{
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+.card .card-body{
+  padding: 20px;
+}
+
+.card .card-title{
+  font-size: 18px;
+  color: #333;
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+
+.card .card-text{
+  font-size: 13px;
+  color: #666;
+}
+
+.card:hover{
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+.card hr{
+  margin: 0px;
+}
