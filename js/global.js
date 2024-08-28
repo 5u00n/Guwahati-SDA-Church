@@ -29,7 +29,12 @@ window.onload = function () {
             document.getElementById('timings').innerHTML = timingData;
             document.getElementById('footerAboutChurch').innerHTML = data.aboutChurch;
 
-            //contacts page data
+
+            //home page data insertion
+            let homeEventRow=document.getElementById('homeEventRow');
+            
+
+            //contacts page data insertion
             let contactAddress=document.getElementById('contactAddress');
             let contactPhone1=document.getElementById('contactPhone1');
             let contactPhone2=document.getElementById('contactPhone2');
