@@ -5612,6 +5612,7 @@ button.close {
 .card .card-text{
   font-size: 13px;
   color: #666;
+  margin-bottom: 5px;
 }
 
 .card:hover{

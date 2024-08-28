@@ -77,6 +77,25 @@
     "title": "About Us",
     "description": "Learn more about Guwahati SDA Church",
     "image": "https://www.myportfolio.com/images/about.jpg",
+    "mission": {
+      "title": "Our Mission",
+      "description": "Our mission is to share the love of our Father.",
+      "image": "https://www.myportfolio.com/images/mission.jpg"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "Our vision is to see a world where everyone knows the love of our Father.",
+      "image": "https://www.myportfolio.com/images/vision.jpg"
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "Our values are based on the teachings of Jesus Christ.",
+      "image": "https://www.myportfolio.com/images/values.jpg"
+    },
+    "allAboutUs": {
+      "title": "All About Us",
+      "description": "Learn more about Guwahati SDA Church"
+    },
     "staff": [
       {
         "name": "John Doe",
@@ -113,7 +132,7 @@
       "eventID2": {
         "id": "eventID2",
         "title": "Event Title 2",
-        "description": "Event Description 2",
+        "description": "Event Description 2 let us know if you have any questions.",
         "date": "2022-02-02",
         "time": "1:00 PM",
         "location": "1234 Elm St, Springfield, IL 62701",
