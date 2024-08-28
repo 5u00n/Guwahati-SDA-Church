@@ -55,11 +55,53 @@ window.onload = function () {
             }
 
             //about page data insertion
-            let aboutChurch = document.getElementById('aboutChurch');
-            let aboutPastor = document.getElementById('aboutPastor');
-            let aboutHistory = document.getElementById('aboutHistory');
-            let aboutVision = document.getElementById('aboutVision');
-            let aboutMission = document.getElementById('aboutMission');
+            let aboutChurch = document.getElementById('aboutChurchTitle');
+            let aboutChurchDesc = document.getElementById('aboutChurchDesc');
+            let aboutInfoCards = document.getElementById('aboutInfoCards');
+            let aboutLeaders= document.getElementById('aboutLeaders');
+
+            if (aboutChurch) {
+                aboutChurch.innerHTML = data.about.aboutChurch.title;
+            }
+            if (aboutChurchDesc) {
+                aboutChurchDesc.innerHTML = data.about.aboutChurch.description;
+            }
+
+            if (aboutInfoCards) {
+                let aboutInfoHtml = "";
+                Object.values(data.about.infoCards).map((infoCard) => {
+                    aboutInfoHtml += `<div class="col-md-4 col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">${infoCard.title}</h5>
+                            <hr>
+                            <p class="card-text">${infoCard.description}</p>
+                        </div>
+                    </div>
+                </div>`;
+                }
+                );
+                aboutInfoCards.innerHTML = aboutInfoHtml;
+            }
+
+            if (aboutLeaders) {
+                let aboutLeadersHtml = "";
+                Object.values(data.about.leaders).map((leader) => {
+                    aboutLeadersHtml += `<div class="col-md-4 col-sm-4">
+                    <div class="card">
+                        <img src="${leader.image}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">${leader.name}</h5>
+                            <hr>
+                            <p class="card-text">${leader.description}</p>
+                        </div>
+                    </div>
+                </div>`;
+                }
+                );
+                aboutLeaders.innerHTML = aboutLeadersHtml;
+            }
+            
 
 
 

@@ -77,22 +77,7 @@
     "title": "About Us",
     "description": "Learn more about Guwahati SDA Church",
     "image": "https://www.myportfolio.com/images/about.jpg",
-    "mission": {
-      "title": "Our Mission",
-      "description": "Our mission is to share the love of our Father.",
-      "image": "https://www.myportfolio.com/images/mission.jpg"
-    },
-    "vision": {
-      "title": "Our Vision",
-      "description": "Our vision is to see a world where everyone knows the love of our Father.",
-      "image": "https://www.myportfolio.com/images/vision.jpg"
-    },
-    "values": {
-      "title": "Our Values",
-      "description": "Our values are based on the teachings of Jesus Christ.",
-      "image": "https://www.myportfolio.com/images/values.jpg"
-    },
-    "allAboutUs": {
+    "aboutChurch": {
       "title": "All About Us",
       "description": "Learn more about Guwahati SDA Church"
     },
