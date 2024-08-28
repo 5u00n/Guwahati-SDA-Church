@@ -71,11 +71,12 @@ window.onload = function () {
                 let aboutInfoHtml = "";
                 Object.values(data.about.infoCards).map((infoCard) => {
                     aboutInfoHtml += `<div class="col-md-4 col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">${infoCard.title}</h5>
-                            <hr>
-                            <p class="card-text">${infoCard.description}</p>
+                <div class="icon-box icon-box-style1">
+                  <div class="icon-box-head">
+                  <span class="ico"><i class="fa ${infoCard.icon}"></i></span>
+                            <h4>${infoCard.title}</h4>
+                            </div>
+                            <p>${infoCard.description}</p>
                         </div>
                     </div>
                 </div>`;
@@ -101,7 +102,7 @@ window.onload = function () {
                 );
                 aboutLeaders.innerHTML = aboutLeadersHtml;
             }
-            
+
 
 
 
