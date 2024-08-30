@@ -34,7 +34,7 @@ window.onload = function () {
 
             if (homeEventRow) {
                 let eventHtml = "";
-                eventHtml += `<div class="row"><h2 class="text-center">${data.event.title}</h2></div> <div class="row">`;
+                eventHtml += `<div><h2 class="text-center">${data.event.title}</h2></div> <div >`;
                 Object.values(data.event.events).map((event) => {
                     console.log(event);
                     eventHtml += `<div class="col-md-4 col-sm-4">
@@ -58,7 +58,7 @@ window.onload = function () {
             let aboutChurch = document.getElementById('aboutChurchTitle');
             let aboutChurchDesc = document.getElementById('aboutChurchDesc');
             let aboutInfoCards = document.getElementById('aboutInfoCards');
-            let aboutLeaders= document.getElementById('aboutLeaders');
+            let aboutLeaders = document.getElementById('aboutLeaders');
 
             if (aboutChurch) {
                 aboutChurch.innerHTML = data.about.aboutChurch.title;
