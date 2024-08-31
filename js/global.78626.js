@@ -1,22 +1,26 @@
 window.onload = function () {
 
+    try {
+        const firebaseConfig = {
+            apiKey: "AIzaSyAqUtzpaSR6L0FWEbtIT28HKPDLD_beRv8",
+            authDomain: "guwahati-sda-church.firebaseapp.com",
+            databaseURL: "https://guwahati-sda-church-default-rtdb.firebaseio.com",
+            projectId: "guwahati-sda-church",
+            storageBucket: "guwahati-sda-church.appspot.com",
+            messagingSenderId: "1018011197869",
+            appId: "1:1018011197869:web:019377c2e546a11610c124",
+            measurementId: "G-L66SBJRMPW"
+        };
 
-    // Determine if the current URL is a GitHub Pages URL
-    const isGitHubPages = window.location.hostname.includes('github.io');
 
-    // Construct the base URL
-    const baseUrl = isGitHubPages
-        ? window.location.origin + window.location.pathname.replace(/\/$/, '')
-        : window.location.origin;
-
-    // Construct the full URL for the fetch request
-    const dataUrl = `${baseUrl}/data/SiteData.json`;
+        firebase.initializeApp(firebaseConfig);
+        firebase.database().ref('/').on('value', snapshot => {
+            let data = snapshot.val();
 
 
+           // console.log(data);
 
-    fetch(dataUrl)
-        .then(response => response.json())
-        .then(data => {
+            // Update the document 
             document.getElementById('address').innerHTML = data.address;
             document.getElementById('phoneEmail').innerHTML = data.phone1 + "<br>" + data.phone2 + "<br>" + data.email;
 
@@ -29,14 +33,98 @@ window.onload = function () {
             document.getElementById('footerAboutChurch').innerHTML = data.aboutChurch;
 
 
+            //------------------------------------------------------------------
             //home page data insertion
+            //------------------------------------------------------------------
+
+            const chapterName1Elem = document.getElementById("chapterName1");
+            const chapterName2Elem = document.getElementById("chapterName2");
+            const scripture1Elem = document.getElementById("scripture1");
+            const scripture2Elem = document.getElementById("scripture2");
+
+            if (chapterName1Elem) {
+                chapterName1Elem.innerHTML = data.home.hero.chapterName1;
+            }
+
+            if (chapterName2Elem) {
+                chapterName2Elem.innerHTML = data.home.hero.chapterName2;
+            }
+
+            if (scripture1Elem) {
+                scripture1Elem.innerHTML = data.home.hero.scripture1;
+            }
+
+            if (scripture2Elem) {
+                scripture2Elem.innerHTML = data.home.hero.scripture2;
+            }
+
+            var text1 = data.home.hero.imageText1.t1 + "<span style='font-size:39px;text-decoration:underline;color:#D3CAFFB1;font-style:italic;'> " + data.home.hero.imageText1.t2 + "</span>";
+            var text2 = data.home.hero.imageText2.t1 + "<span style='font-size:39px;text-decoration:underline;color:#CEC3FFB3;font-style:italic;'> " + data.home.hero.imageText2.t2 + "</span>";
+            var url1 = data.home.hero.image1;
+            var url2 = data.home.hero.image2;
+            const heroImage1Elem = document.getElementById("heroImage1");
+            const heroImage2Elem = document.getElementById("heroImage2");
+            const imageText1Elem = document.getElementById("imageText1");
+            const imageText2Elem = document.getElementById("imageText2");
+
+            if (heroImage1Elem) {
+                heroImage1Elem.style.backgroundImage = "url(" + url1 + ")";
+                heroImage1Elem.style.backgroundSize = "cover";
+            }
+
+            if (heroImage2Elem) {
+                heroImage2Elem.style.backgroundImage = "url(" + url2 + ")";
+                heroImage2Elem.style.backgroundSize = "cover";
+            }
+
+            if (imageText1Elem) {
+                imageText1Elem.innerHTML = text1;
+            }
+
+            if (imageText2Elem) {
+                imageText2Elem.innerHTML = text2;
+            }
+
+            let heroImageEvent = document.getElementById('heroImageEvent');
+
+            if (heroImageEvent) {
+
+                if (data.event.events.length > 0) {
+                    heroImageEvent.style.backgroundImage = "url(" + data.event.events[0].image + ")";
+                    heroImageEvent.style.backgroundSize = "cover";
+                    heroImageEvent.style.backgroundPosition = "center";
+                    heroImageEvent.style.backgroundRepeat = "no-repeat";
+                }
+            }
+
+
+            var aboutCardHtml = "";
+            Object.values(data.home.aboutUs).map(element => {
+                aboutCardHtml += "<div class='col-md-4 col-sm-4 featured-block'>"
+                aboutCardHtml += "<h3 >" + element.title + "</h3>";
+                aboutCardHtml += "<figure>";
+                aboutCardHtml += "<a href='" + element.link + "'>"
+                aboutCardHtml += "<img src='" + element.image + "' alt=" + element.title + " width='800' height='500' /></a>";
+                aboutCardHtml += "</figure>";
+                aboutCardHtml += "<p>" + element.description + "</p>";
+                aboutCardHtml += "<a href='" + element.buttonLink + "' class='btn btn-success'>" + element.buttonText + "</a>";
+                aboutCardHtml += "</div>";
+            }
+            );
+
+            const aboutCard = document.getElementById("aboutCard");
+            if (aboutCard) {
+                aboutCard.innerHTML = aboutCardHtml;
+            }
+
+
             let homeEventRow = document.getElementById('homeEventRow');
 
             if (homeEventRow) {
                 let eventHtml = "";
                 eventHtml += `<div><h2 class="text-center">${data.event.title}</h2></div> <div >`;
                 Object.values(data.event.events).map((event) => {
-                    console.log(event);
+
                     eventHtml += `<div class="col-md-4 col-sm-4">
                     <div class="card">
                         <img src="${event.image}" class="card-img-top" alt="...">
@@ -57,11 +145,18 @@ window.onload = function () {
             //------------------------------------------------------------------
             //about page data insertion
             //------------------------------------------------------------------
+            const aboutHeroImage = document.getElementById('aboutHeroImage');
             let aboutChurch = document.getElementById('aboutChurchTitle');
             let aboutChurchDesc = document.getElementById('aboutChurchDesc');
             let aboutInfoCards = document.getElementById('aboutInfoCards');
             let aboutLeaders = document.getElementById('aboutLeaders');
             let history = document.getElementById('aboutHistory');
+
+            if (aboutHeroImage) {
+                aboutHeroImage.style.backgroundImage = "url(" + data.about.aboutHeroImage + ")";
+                aboutHeroImage.style.backgroundSize = "cover";
+            }
+
 
             if (aboutChurch) {
                 aboutChurch.innerHTML = data.about.aboutChurch.title;
@@ -152,18 +247,22 @@ window.onload = function () {
             //------------------------------------------------------------------
             //contacts page data insertion
             //------------------------------------------------------------------
+            const contactHeroImage = document.getElementById('contactHeroImage');
             let contactAddress = document.getElementById('contactAddress');
             let contactPhone1 = document.getElementById('contactPhone1');
             let contactPhone2 = document.getElementById('contactPhone2');
             let contactEmail = document.getElementById('contactEmail');
 
+            if (contactHeroImage) {
+                contactHeroImage.style.backgroundImage = "url(" + data.contact.contactHeroImage + ")";
+                contactHeroImage.style.backgroundSize = "cover";
+            }
+            
+
             if (contactAddress) {
-
-
                 contactAddress.innerHTML = data.address;
             }
             if (contactPhone1) {
-                console.log(data.phone1);
                 contactPhone1.innerHTML = "📞" + data.phone1;
             }
             if (contactPhone2) {
@@ -174,9 +273,31 @@ window.onload = function () {
                 contactEmail.href = "mailto:" + data.email;
             }
 
+        });
+    } catch (e) {
+        console.error(e);
+    }
+
+
+    // Determine if the current URL is a GitHub Pages URL
+    //const isGitHubPages = window.location.hostname.includes('github.io');
+
+    // Construct the base URL
+    //const baseUrl = isGitHubPages? window.location.origin + window.location.pathname.replace(/\/$/, '')
+    //     : window.location.origin;
+
+    // Construct the full URL for the fetch request
+    // const dataUrl = `${baseUrl}/data/SiteData.json`;
 
 
 
-        })
-        .catch(error => console.error('Error fetching data:', error));
+    //  fetch(dataUrl)
+    //     .then(response => response.json())
+    //     .then(data => {
+
+
+
+
+    //     })
+    //  .catch(error => console.error('Error fetching data:', error));
 };
