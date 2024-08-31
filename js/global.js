@@ -140,10 +140,10 @@ window.onload = function () {
                     </div>`;
 
 
-                }
-                );
+                });
+                history.innerHTML = historyHtml;
             }
-            history.innerHTML = historyHtml;
+
 
 
 
@@ -158,16 +158,19 @@ window.onload = function () {
             let contactEmail = document.getElementById('contactEmail');
 
             if (contactAddress) {
+
+
                 contactAddress.innerHTML = data.address;
             }
             if (contactPhone1) {
-                contactPhone1.innerHTML = data.phone1;
+                console.log(data.phone1);
+                contactPhone1.innerHTML = "📞" + data.phone1;
             }
             if (contactPhone2) {
-                contactPhone2.innerHTML = data.phone2;
+                contactPhone2.innerHTML = "📞" + data.phone2;
             }
             if (contactEmail) {
-                contactEmail.innerHTML = data.email;
+                contactEmail.innerHTML = "✉️" + data.email;
                 contactEmail.href = "mailto:" + data.email;
             }
 
