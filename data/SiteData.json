@@ -68,7 +68,7 @@
         "link": "/about.html",
         "description": "Join us and make a difference",
         "buttonText": "Join WhatsApp Group",
-        "buttonLink": "https://chat.whatsapp.com/invite/1234567890",
+        "buttonLink": "https://chat.whatsapp.com/D6kVDicHSyE4S1UAhM81Bi",
         "image": "/assets/img/joinus.jpg"
       }
     }
@@ -81,18 +81,69 @@
       "title": "All About Us",
       "description": "Learn more about Guwahati SDA Church"
     },
-    "staff": [
-      {
-        "name": "John Doe",
-        "title": "Web Developer",
-        "image": "https://www.myportfolio.com/images/john-doe.jpg"
+    "infoCards": {
+      "card1": {
+        "title": "Our Mission",
+        "description": "Our mission is to share the love of our Father.",
+        "icon": "fa fa-heart"
       },
-      {
-        "name": "Jane Doe",
-        "title": "Web Designer",
-        "image": "https://www.myportfolio.com/images/jane-doe.jpg"
+      "card2": {
+        "title": "Our Vision",
+        "description": "Our vision is to grow in faith and make a difference.",
+        "icon": "fa fa-eye"
+      },
+      "card3": {
+        "title": "Our Values",
+        "description": "Our values are faith, love, and hope.",
+        "icon": "fa fa-balance-scale"
       }
-    ]
+    },
+    "leaders": {
+      "leaderID1": {
+        "id": "leaderID1",
+        "name": "Pastor John Doe",
+        "title": "Senior Pastor",
+        "image": "https://www.myportfolio.com/images/pastor1.jpg",
+        "phone": "+1234567890",
+        "email": "pastorjohn@gmail.com"
+      },
+      "leaderID2": {
+        "id": "leaderID2",
+        "name": "Elder Jane Doe",
+        "title": "Head Elder",
+        "image": "https://www.myportfolio.com/images/elder1.jpg",
+        "phone": "+1234567890",
+        "email": "jane@gmail.com"
+      },
+      "leaderID3": {
+        "id": "leaderID3",
+        "name": "Deacon James Doe",
+        "title": "Deacon",
+        "image": "https://www.myportfolio.com/images/deacon1.jpg",
+        "phone": "+1234567890",
+        "email": "james@gmailk.com"
+      }
+    },
+    "history": {
+      "historyID1": {
+        "id": "historyID1",
+        "title": "History 1",
+        "description": "History Description 1",
+        "image": "https://www.myportfolio.com/images/history1.jpg"
+      },
+      "historyID2": {
+        "id": "historyID2",
+        "title": "History 2",
+        "description": "History Description 2",
+        "image": "https://www.myportfolio.com/images/history2.jpg"
+      },
+      "historyID3": {
+        "id": "historyID3",
+        "title": "History 3",
+        "description": "History Description 3",
+        "image": "https://www.myportfolio.com/images/history3.jpg"
+      }
+    }
   },
   "contact": {
     "title": "Contact US",

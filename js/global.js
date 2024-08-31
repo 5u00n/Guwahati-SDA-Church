@@ -54,11 +54,14 @@ window.onload = function () {
                 homeEventRow.innerHTML = eventHtml;
             }
 
+            //------------------------------------------------------------------
             //about page data insertion
+            //------------------------------------------------------------------
             let aboutChurch = document.getElementById('aboutChurchTitle');
             let aboutChurchDesc = document.getElementById('aboutChurchDesc');
             let aboutInfoCards = document.getElementById('aboutInfoCards');
             let aboutLeaders = document.getElementById('aboutLeaders');
+            let history = document.getElementById('aboutHistory');
 
             if (aboutChurch) {
                 aboutChurch.innerHTML = data.about.aboutChurch.title;
@@ -73,7 +76,7 @@ window.onload = function () {
                     aboutInfoHtml += `<div class="col-md-4 col-sm-4">
                 <div class="icon-box icon-box-style1">
                   <div class="icon-box-head">
-                  <span class="ico"><i class="fa ${infoCard.icon}"></i></span>
+                  <span class="ico"><i class="${infoCard.icon}"></i></span>
                             <h4>${infoCard.title}</h4>
                             </div>
                             <p>${infoCard.description}</p>
@@ -89,26 +92,66 @@ window.onload = function () {
                 let aboutLeadersHtml = "";
                 Object.values(data.about.leaders).map((leader) => {
                     aboutLeadersHtml += `<div class="col-md-4 col-sm-4">
-                    <div class="card">
-                        <img src="${leader.image}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">${leader.name}</h5>
-                            <hr>
-                            <p class="card-text">${leader.description}</p>
-                        </div>
-                    </div>
-                </div>`;
+                <div class="grid-item staff-item format-standard">
+                  <div class="grid-item-inner">
+                    <a href="staff.html" class="media-box">
+                      <img src="${leader.image}" alt="" />
+                    </a>
+                    <div class="grid-content">
+                      <div class="staff-item-name">
+                        <h5>${leader.name}</h5>
+                        <span class="meta-data">Events Manager</span>
+                      </div>
+                      <ul class="social-icons-colored">
+                        <li class="phone">
+                          <a href="${leader.phone}"><i class="fa fa-phone"></i></a>
+                        </li>
+                        <li class="email">
+                          <a href="${leader.email}"><i class="fa fa-mail-forward"></i></a>
+                        </li>
+                      </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>`;
                 }
                 );
                 aboutLeaders.innerHTML = aboutLeadersHtml;
             }
 
+            let historyHtml = "";
+            if (history) {
+                Object.values(data.about.history).map((historyData) => {
+                    historyHtml += `<div class="col-md-4 col-sm-4">
+                        <div class="card horizontal">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="${historyData.image}" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${historyData.title}</h5>
+                                        <hr>
+                                        <p class="card-text">${historyData.description}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+
+
+                }
+                );
+            }
+            history.innerHTML = historyHtml;
 
 
 
 
 
+            //------------------------------------------------------------------
             //contacts page data insertion
+            //------------------------------------------------------------------
             let contactAddress = document.getElementById('contactAddress');
             let contactPhone1 = document.getElementById('contactPhone1');
             let contactPhone2 = document.getElementById('contactPhone2');
