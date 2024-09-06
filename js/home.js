@@ -46,17 +46,19 @@
 
 
         canvas = document.getElementById('canvas-animation');
-        canvas.width = width;
-        canvas.height = height;
-        ctx = canvas.getContext('2d');
+        if (canvas) {
+            canvas.width = width;
+            canvas.height = height;
+            ctx = canvas.getContext('2d');
 
-        // create particles
-        circles = [];
-        for (var x = 0; x < width * 0.5; x++) {
-            var c = new Circle();
-            circles.push(c);
+            // create particles
+            circles = [];
+            for (var x = 0; x < width * 0.5; x++) {
+                var c = new Circle();
+                circles.push(c);
+            }
+            animate();
         }
-        animate();
     }
 
     // Event handling

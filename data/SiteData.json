@@ -1,0 +1,188 @@
+{
+  "siteTitle": "Guwahati SDA Church",
+  "siteDescription": "Welcome to Guwahati SDA Church, a community where you can grow in faith and make a difference",
+  "siteKeywords": "Guwahati, SDA, Church, Community, Faith, Difference, Seventh-day Adventist, Adventist, Christian, Religion, Bible, Jesus, God, Love, Hope, Future, Jeremiah 29:11",
+  "siteImage": "",
+  "siteLogo": "https://w7.pngwing.com/pngs/52/114/png-transparent-middletown-portland-seventh-day-adventist-church-christian-church-wasatch-hills-seventh-day-adventist-church-church-angle-leaf-logo-thumbnail.png",
+  "siteFavicon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTJJzuG8JIJticdacAiuPKzBQh2lClBRTEw&s",
+  "siteAuthor": "Suren Hembram",
+  "title1": "Guwahati",
+  "title2": "SDA Church",
+  "email": "guwahatisdachurch@gmail.com",
+  "phone2": "+918822643420",
+  "phone1": "+918787713197",
+  "address": "Latakata, Bakarapara, Guwahati, Assam 781029",
+  "aboutChurch": "Guwahati SDA Church is a community of faith and love. Our mission is to share the love of our Father. Join us and make a difference.",
+  "timings": {
+    "0": "Midweek : Tue 7  (Online/Home Visit)",
+    "1": "Vespers : Fri 7:00 PM",
+    "2": "Sabbath : Sat 9:30 AM - 1:00 PM"
+  },
+  "coordinates": {
+    "latitude": 39.781721,
+    "longitude": -89.650148
+  },
+  "googleMapLink": "https://www.google.com/maps?q=39.781721,-89.650148",
+  "siteSocialLinks": {
+    "facebook": "https://www.facebook.com/myportfolio"
+  },
+  "home": {
+    "title": "Welcome to Guwahati SDA Church",
+    "description": " A community where you can grow in faith and make a difference.",
+    "hero": {
+      "title": "Hello from Guwahati SDA Church",
+      "description": "Welcome to our community where you can grow in faith and make a difference.",
+      "scripture1": "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future. - Jeremiah 29:11",
+      "chapterName1": "Jeremiah 29:11",
+      "scripture2": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life. - John 3:16",
+      "chapterName2": "John 3:16",
+      "buttonText": "Connect With Us",
+      "buttonLink": "/contact",
+      "image1": "/images/backgrounds/Guwahati_City.jpg",
+      "imageText1": {
+        "t1": "Guwahati SDA Church ",
+        "t2": "Welcomes You !"
+      },
+      "image2": "/images/backgrounds/khanapara-guwahati-assam_0_1200.jpg",
+      "imageText2": { "t1": "Join Us This ", "t2": "Saturday " }
+    },
+    "aboutUs": {
+      "ourCommunity": {
+        "title": "Our Community",
+        "link": "/about.html",
+        "description": "We are a community of faith and love.",
+        "buttonText": "Learn More",
+        "buttonLink": "/about.html",
+        "image": "/assets/img/community.jpg"
+      },
+      "ourMission": {
+        "title": "Our Mission",
+        "link": "/about.html",
+        "description": " Our mission is to share the love of our Father.",
+        "buttonText": "Learn More",
+        "buttonLink": "/about.html",
+        "image": "/assets/img/aboutus1.jpg"
+      },
+      "joinUs": {
+        "title": "Join our Group",
+        "link": "/about.html",
+        "description": "Join us and make a difference",
+        "buttonText": "Join WhatsApp Group",
+        "buttonLink": "https://chat.whatsapp.com/D6kVDicHSyE4S1UAhM81Bi",
+        "image": "/assets/img/joinus.jpg"
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Learn more about Guwahati SDA Church",
+    "image": "https://www.myportfolio.com/images/about.jpg",
+    "aboutChurch": {
+      "title": "All About Us",
+      "description": "Learn more about Guwahati SDA Church"
+    },
+    "infoCards": {
+      "card1": {
+        "title": "Our Mission",
+        "description": "Our mission is to share the love of our Father.",
+        "icon": "fa fa-heart"
+      },
+      "card2": {
+        "title": "Our Vision",
+        "description": "Our vision is to grow in faith and make a difference.",
+        "icon": "fa fa-eye"
+      },
+      "card3": {
+        "title": "Our Values",
+        "description": "Our values are faith, love, and hope.",
+        "icon": "fa fa-balance-scale"
+      }
+    },
+    "leaders": {
+      "leaderID1": {
+        "id": "leaderID1",
+        "name": "Pastor John Doe",
+        "title": "Senior Pastor",
+        "image": "https://www.myportfolio.com/images/pastor1.jpg",
+        "phone": "+1234567890",
+        "email": "pastorjohn@gmail.com"
+      },
+      "leaderID2": {
+        "id": "leaderID2",
+        "name": "Elder Jane Doe",
+        "title": "Head Elder",
+        "image": "https://www.myportfolio.com/images/elder1.jpg",
+        "phone": "+1234567890",
+        "email": "jane@gmail.com"
+      },
+      "leaderID3": {
+        "id": "leaderID3",
+        "name": "Deacon James Doe",
+        "title": "Deacon",
+        "image": "https://www.myportfolio.com/images/deacon1.jpg",
+        "phone": "+1234567890",
+        "email": "james@gmailk.com"
+      }
+    },
+    "history": {
+      "historyID1": {
+        "id": "historyID1",
+        "title": "History 1",
+        "description": "History Description 1",
+        "image": "https://www.myportfolio.com/images/history1.jpg"
+      },
+      "historyID2": {
+        "id": "historyID2",
+        "title": "History 2",
+        "description": "History Description 2",
+        "image": "https://www.myportfolio.com/images/history2.jpg"
+      },
+      "historyID3": {
+        "id": "historyID3",
+        "title": "History 3",
+        "description": "History Description 3",
+        "image": "https://www.myportfolio.com/images/history3.jpg"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact US",
+    "description": "Let's get in touch",
+    "buttonText": "Send Message",
+    "buttonLink": "/contact",
+    "image": "https://www.myportfolio.com/images/contact.jpg"
+  },
+  "event": {
+    "title": "Events",
+    "description": "Join us at our events",
+    "events": {
+      "eventID1": {
+        "id": "eventID1",
+        "title": "Event Title 1",
+        "description": "Event Description 1",
+        "date": "2022-01-01",
+        "time": "12:00 PM",
+        "location": "1234 Elm St, Springfield, IL 62701",
+        "image": "https://www.myportfolio.com/images/event1.jpg"
+      },
+      "eventID2": {
+        "id": "eventID2",
+        "title": "Event Title 2",
+        "description": "Event Description 2 let us know if you have any questions.",
+        "date": "2022-02-02",
+        "time": "1:00 PM",
+        "location": "1234 Elm St, Springfield, IL 62701",
+        "image": "https://www.myportfolio.com/images/event2.jpg"
+      },
+      "eventID3": {
+        "id": "eventID3",
+        "title": "Event Title 3",
+        "description": "Event Description 3",
+        "date": "2024-09-10",
+        "time": "2:00 PM",
+        "location": "1234 Elm St, Springfield, IL 62701",
+        "image": "https://www.myportfolio.com/images/event3.jpg"
+      }
+    }
+  }
+}
