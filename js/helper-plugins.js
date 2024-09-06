@@ -650,7 +650,7 @@ function Swipe(k, e) {
  * Copyright 2011, Chris Coyier - http://css-tricks.com + Dave Rupert - http://daverupert.com
  * Credit to Thierry Koblentz - http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
  * Released under the WTFPL license - http://sam.zoy.org/wtfpl/
- */
+ 
 (function (a) {
 	a.fn.fitVids = function (b) {
 		var c = { customSelector: null }; var e = document.createElement("div"), d = document.getElementsByTagName("base")[0] || document.getElementsByTagName("script")[0];
@@ -662,7 +662,7 @@ function Swipe(k, e) {
 			})
 		})
 	}
-})(jQuery);
+})(jQuery);*/
 
 
 /*
