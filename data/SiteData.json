@@ -101,8 +101,8 @@
     "leaders": {
       "leaderID1": {
         "id": "leaderID1",
-        "name": "Pastor John Doe",
-        "title": "Senior Pastor",
+        "name": "Vijay Sonar",
+        "title": "Assam Region ",
         "image": "https://www.myportfolio.com/images/pastor1.jpg",
         "phone": "+1234567890",
         "email": "pastorjohn@gmail.com"
@@ -124,26 +124,7 @@
         "email": "james@gmailk.com"
       }
     },
-    "history": {
-      "historyID1": {
-        "id": "historyID1",
-        "title": "History 1",
-        "description": "History Description 1",
-        "image": "https://www.myportfolio.com/images/history1.jpg"
-      },
-      "historyID2": {
-        "id": "historyID2",
-        "title": "History 2",
-        "description": "History Description 2",
-        "image": "https://www.myportfolio.com/images/history2.jpg"
-      },
-      "historyID3": {
-        "id": "historyID3",
-        "title": "History 3",
-        "description": "History Description 3",
-        "image": "https://www.myportfolio.com/images/history3.jpg"
-      }
-    }
+    "history": {}
   },
   "contact": {
     "title": "Contact US",

@@ -495,7 +495,7 @@ jQuery(function ($) {
 	});
 
 	// FITVIDS
-	$(".fw-video, .format-video .post-media").fitVids();
+	//$(".fw-video, .format-video .post-media").fitVids();
 
 	// Centering the dropdown menus
 	$(".main-navigation ul li").mouseover(function () {

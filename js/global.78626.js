@@ -4,6 +4,8 @@ window.onload = function () {
 
     const hostname = window.location.hostname;
 
+    console.log("hostname : ", hostname, hostname.includes("web.app"));
+
 
     //load from firebase hosted site
     if (hostname.includes("web.app")) {
@@ -185,7 +187,7 @@ function loadDataToDocument(data) {
     }
 
     //------------------------------------------------------------------
-    //about page data insertion
+    //About page data insertion
     //------------------------------------------------------------------
     const aboutHeroImage = document.getElementById('aboutHeroImage');
     let aboutChurch = document.getElementById('aboutChurchTitle');
@@ -237,14 +239,14 @@ function loadDataToDocument(data) {
                     <div class="grid-content">
                       <div class="staff-item-name">
                         <h5>${leader.name}</h5>
-                        <span class="meta-data">Events Manager</span>
+                        <span class="meta-data">${leader.title}</span>
                       </div>
                       <ul class="social-icons-colored">
                         <li class="phone">
-                          <a href="${leader.phone}"><i class="fa fa-phone"></i></a>
+                          <a href="tel:${leader.phone}"><i class="fa fa-phone"></i></a>
                         </li>
                         <li class="email">
-                          <a href="${leader.email}"><i class="fa fa-mail-forward"></i></a>
+                          <a href="mailto:${leader.email}"><i class="fa fa-mail-forward"></i></a>
                         </li>
                       </ul>
                       </div>
@@ -257,7 +259,7 @@ function loadDataToDocument(data) {
     }
 
     let historyHtml = "";
-    if (history) {
+    if (history && data.about.history) {
         Object.values(data.about.history).map((historyData) => {
             historyHtml += `<div class="col-md-4 col-sm-4">
                         <div class="card horizontal">
