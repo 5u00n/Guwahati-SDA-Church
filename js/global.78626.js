@@ -8,7 +8,7 @@ window.onload = function () {
 
 
     //load from firebase hosted site
-    if (hostname.includes("web.app")) {
+    if (hostname.includes("web.app") || hostname.includes("firebaseapp.com")) {
         try {
             const firebaseConfig = {
                 apiKey: "AIzaSyAqUtzpaSR6L0FWEbtIT28HKPDLD_beRv8",
