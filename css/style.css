@@ -9,9 +9,9 @@ Author:	imithemes
 @import url("font-awesome.css");
 @import url("line-icons.css");
 @import url("animations.css");
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
-@import url(http://fonts.googleapis.com/css?family=Volkhov:400,400italic);
-@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
 
 /*------------------------------------------------------------------
 [Table of contents]
@@ -293,7 +293,7 @@ iframe {
   border: 0;
 }
 
-.d-none{
+.d-none {
   display: none;
 }
 

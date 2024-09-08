@@ -95,7 +95,7 @@
       "card3": {
         "title": "Our Values",
         "description": "Our values are faith, love, and hope.",
-        "icon": "fa fa-balance-scale"
+        "icon": "fa fa-star"
       }
     },
     "leaders": {
@@ -103,7 +103,7 @@
         "id": "leaderID1",
         "name": "Vijay Sonar",
         "title": "Assam Region ",
-        "image": "https://www.myportfolio.com/images/pastor1.jpg",
+        "image": "",
         "phone": "+1234567890",
         "email": "pastorjohn@gmail.com"
       },
@@ -111,7 +111,7 @@
         "id": "leaderID2",
         "name": "Elder Jane Doe",
         "title": "Head Elder",
-        "image": "https://www.myportfolio.com/images/elder1.jpg",
+        "image": "",
         "phone": "+1234567890",
         "email": "jane@gmail.com"
       },
@@ -119,7 +119,7 @@
         "id": "leaderID3",
         "name": "Deacon James Doe",
         "title": "Deacon",
-        "image": "https://www.myportfolio.com/images/deacon1.jpg",
+        "image": "",
         "phone": "+1234567890",
         "email": "james@gmailk.com"
       }
@@ -136,34 +136,6 @@
   "event": {
     "title": "Events",
     "description": "Join us at our events",
-    "events": {
-      "eventID1": {
-        "id": "eventID1",
-        "title": "Event Title 1",
-        "description": "Event Description 1",
-        "date": "2022-01-01",
-        "time": "12:00 PM",
-        "location": "1234 Elm St, Springfield, IL 62701",
-        "image": "https://www.myportfolio.com/images/event1.jpg"
-      },
-      "eventID2": {
-        "id": "eventID2",
-        "title": "Event Title 2",
-        "description": "Event Description 2 let us know if you have any questions.",
-        "date": "2022-02-02",
-        "time": "1:00 PM",
-        "location": "1234 Elm St, Springfield, IL 62701",
-        "image": "https://www.myportfolio.com/images/event2.jpg"
-      },
-      "eventID3": {
-        "id": "eventID3",
-        "title": "Event Title 3",
-        "description": "Event Description 3",
-        "date": "2024-09-10",
-        "time": "2:00 PM",
-        "location": "1234 Elm St, Springfield, IL 62701",
-        "image": "https://www.myportfolio.com/images/event3.jpg"
-      }
-    }
+    "events": {}
   }
 }

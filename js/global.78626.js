@@ -59,7 +59,6 @@ window.onload = function () {
 };
 
 function loadDataToDocument(data) {
-    // console.log(data);
 
     // Update the document 
     document.getElementById('address').innerHTML = data.address;
@@ -99,8 +98,8 @@ function loadDataToDocument(data) {
         scripture2Elem.innerHTML = data.home.hero.scripture2;
     }
 
-    var text1 = data.home.hero.imageText1.t1 + "<span style='font-size:39px;text-decoration:underline;color:#D3CAFFB1;font-style:italic;'> " + data.home.hero.imageText1.t2 + "</span>";
-    var text2 = data.home.hero.imageText2.t1 + "<span style='font-size:39px;text-decoration:underline;color:#CEC3FFB3;font-style:italic;'> " + data.home.hero.imageText2.t2 + "</span>";
+    var text1 = data.home.hero.imageText1.t1 + "<span style='font-size:39px;text-decoration:underline;color:#D3CAFFCF;font-style:italic;'> " + data.home.hero.imageText1.t2 + "</span>";
+    var text2 = data.home.hero.imageText2.t1 + "<span style='font-size:39px;text-decoration:underline;color:#CEC3FFCF;font-style:italic;'> " + data.home.hero.imageText2.t2 + "</span>";
     var url1 = data.home.hero.image1;
     var url2 = data.home.hero.image2;
     const heroImage1Elem = document.getElementById("heroImage1");
@@ -297,6 +296,8 @@ function loadDataToDocument(data) {
     let contactPhone2 = document.getElementById('contactPhone2');
     let contactEmail = document.getElementById('contactEmail');
 
+    let googleMapIframe = document.getElementById('googleMapIframe');
+
     if (contactHeroImage) {
         contactHeroImage.style.backgroundImage = "url(" + data.contact.contactHeroImage + ")";
         contactHeroImage.style.backgroundSize = "cover";
@@ -318,13 +319,16 @@ function loadDataToDocument(data) {
         contactEmail.innerHTML = "✉️" + data.email;
         contactEmail.href = "mailto:" + data.email;
     }
+
+    if (googleMapIframe) {
+        googleMapIframe.src = data.contact.mapUrl;
+    }
 }
 
 
 function getClosestFutureEvent(data) {
     // Get current date and time
     const now = new Date().getTime();
-    console.log("Current Date and Time:", now);
 
     // Initialize variables to store the closest event
     let closestEvent = null;
@@ -340,11 +344,9 @@ function getClosestFutureEvent(data) {
 
         // Check if the date parsing was successful
         if (isNaN(eventDateTime)) {
-            console.error("Invalid Date:", eventDateTimeStr);
             continue;
         }
 
-        console.log("Event Date and Time: ", eventDateTimeStr, eventDateTime);
 
         // Calculate time difference
         const timeDiff = eventDateTime - now;
@@ -356,8 +358,6 @@ function getClosestFutureEvent(data) {
         }
     }
 
-    // Output the closest event
-    console.log("Closest event to the near future:", closestEvent);
     return closestEvent;
 }
 
