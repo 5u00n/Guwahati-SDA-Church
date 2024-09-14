@@ -2,7 +2,7 @@
   "hosting": {
     "public": "./",
     "site": "guwahatisdachurch",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
-   
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "cleanUrls": true
   }
 }
